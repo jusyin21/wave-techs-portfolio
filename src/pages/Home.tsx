@@ -3,6 +3,10 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Code, Palette, Zap } from 'lucide-react';
+import profileImg from "@/assets/images/justin-profile.png";
+
+<img src={profileImg} alt="Justin" />
+
 
 const Home = () => {
   const features = [
@@ -127,7 +131,7 @@ const Home = () => {
         {/* Floating Animation */}
         <motion.img
   src="/src/assets/images/justin-profile.png"
-  alt="justin-profile.png"
+  alt="justin"
   className="absolute top-20 right-20 w-28 h-28 object-cover rounded-full border-4 border-accent shadow-lg"
   animate={{
     y: [-10, 10, -10],
