@@ -129,20 +129,7 @@ const Home = () => {
         </motion.div>
 
         {/* Floating Animation */}
-        <motion.img
-  <img src="./assets/images/justin-profile.png" />
-  alt="justin"
-  className="absolute top-20 right-20 w-28 h-28 object-cover rounded-full border-4 border-accent shadow-lg"
-  animate={{
-    y: [-10, 10, -10],
-    rotate: [0, 360],
-  }}
-  transition={{
-    duration: 8,
-    repeat: Infinity,
-    ease: "easeInOut",
-  }}
-        />
+              />
       </section>
     </div>
   );
