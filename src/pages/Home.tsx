@@ -127,7 +127,7 @@ const Home = () => {
         {/* Floating Animation */}
         <motion.img
   src="/src/assets/images/justin-profile.png"
-  alt="Justin profile"
+  alt="Justin profile.png"
   className="absolute top-20 right-20 w-28 h-28 object-cover rounded-full border-4 border-accent shadow-lg"
   animate={{
     y: [-10, 10, -10],
