@@ -1,0 +1,96 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 241 245 249;
+    --foreground: 15 23 42;
+
+    --card: 241 245 249;
+    --card-foreground: 15 23 42;
+
+    --popover: 241 245 249;
+    --popover-foreground: 15 23 42;
+
+    --primary: 30 64 175;
+    --primary-foreground: 241 245 249;
+
+    --secondary: 5 11 24;
+    --secondary-foreground: 241 245 249;
+
+    --muted: 226 232 240;
+    --muted-foreground: 71 85 105;
+
+    --accent: 6 182 212;
+    --accent-foreground: 5 11 24;
+
+    --destructive: 239 68 68;
+    --destructive-foreground: 248 250 252;
+
+    --border: 226 232 240;
+    --input: 226 232 240;
+    --ring: 30 64 175;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 5 11 24;
+    --foreground: 241 245 249;
+
+    --card: 15 23 42;
+    --card-foreground: 241 245 249;
+
+    --popover: 15 23 42;
+    --popover-foreground: 241 245 249;
+
+    --primary: 30 64 175;
+    --primary-foreground: 241 245 249;
+
+    --secondary: 30 41 59;
+    --secondary-foreground: 241 245 249;
+
+    --muted: 30 41 59;
+    --muted-foreground: 148 163 184;
+
+    --accent: 6 182 212;
+    --accent-foreground: 5 11 24;
+
+    --destructive: 239 68 68;
+    --destructive-foreground: 248 250 252;
+
+    --border: 30 41 59;
+    --input: 30 41 59;
+    --ring: 6 182 212;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+  
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+  
+  .glass-effect {
+    @apply backdrop-blur-md bg-white/10 border border-white/20;
+  }
+}
